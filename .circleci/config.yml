@@ -14,10 +14,10 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.7
-    working_directory: ~/rails-tutrial-hello/src
+    working_directory: ~/rails-tutrial-hello-naozou/src
     steps:
       - checkout:
-          path: ~/rails-tutrial-hello
+          path: ~/rails-tutrial-hello-naozou
       - ruby/install-deps
   test:
     docker:
@@ -27,10 +27,10 @@ jobs:
       BUNDLE_RETRY: "3"
       APP_DATABASE_HOST: "127.0.0.1"
       RAILS_ENV: test
-    working_directory: ~/rails-tutrial-hello/src
+    working_directory: ~/rails-tutrial-hello-naozou/src
     steps:
       - checkout:
-          path: ~/rails-tutrial-hello
+          path: ~/rails-tutrial-hello-naozou
       - ruby/install-deps
       - run:
           name: test
