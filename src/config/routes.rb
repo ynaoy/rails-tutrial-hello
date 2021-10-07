@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/hello', to: 'application#hello'
   get '/hola', to: 'application#hola'
   get '/goodbye', to: 'application#goodbye'
+  get '/cdtest', to: 'application#cdtest'
 end
