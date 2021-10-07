@@ -12,4 +12,7 @@ class ApplicationController < ActionController::Base
   def goodbye
       render html:"goodbye, world!"
   end
+  def cdtest
+      render html:"cd test!"
+  end
 end
